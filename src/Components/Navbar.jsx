@@ -23,10 +23,10 @@ else{
 }
 }
   return (
-    <div className="justify-around flex border-none h-20 items-center bg-slate-300">
+    <div className="justify-around flex border-none h-20 items-center bg-white">
       <Link
         to="/"
-        className="hover:scale-110 hover:bg-white/50 p-1 rounded-md transition duration-300 ease-in-out hover:-translate-y-1"
+        className="hover:scale-110  p-1 rounded-md border-1 border-slate-300 hover:bg-slate-200 transition duration-300 ease-in-out hover:-translate-y-1"
       >
         Home
       </Link>
@@ -53,6 +53,9 @@ else{
       </Menu>
     </Dropdown>
  </div>
+
+<div></div>
+
 <button className="text-xl border-0 border-white/50 p-2" onClick={handletoggle}>{Toggle==="Dark" ? <FaMoon />:<CiLight />}</button>
     
     </div>

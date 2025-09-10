@@ -7,6 +7,8 @@ import MenuItem from '@mui/joy/MenuItem';
 import { CiLight } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
 import { useState } from "react";
+import SearchIcon from '@mui/icons-material/Search';
+
 
 
 
@@ -42,6 +44,7 @@ else{
       >
         Contact Us
       </Link>
+      
 
  <div className="hover:scale-110 transition duration-300 ease-in-out hover:-translate-y-1  p-1">
     <Dropdown >
@@ -55,6 +58,10 @@ else{
  </div>
 
 <div></div>
+
+<div>
+  <input className="border-1 h-10 hover:border-slate-300 rounded-md border-white" type="search" placeholder="Search anything here"/><SearchIcon className="border-none rounded-md w-10 h-10 p-2 text-white bg-blue-400 hover:text-black"></SearchIcon>
+</div>
 
 <button className="text-xl border-0 border-white/50 p-2" onClick={handletoggle}>{Toggle==="Dark" ? <FaMoon />:<CiLight />}</button>
     

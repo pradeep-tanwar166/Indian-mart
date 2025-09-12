@@ -8,12 +8,33 @@ import { CiLight } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa";
 import { useState } from "react";
 import SearchIcon from '@mui/icons-material/Search';
+import Badge from '@mui/material/Badge';
+import { styled } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 
 
-function Navbar() {
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  '& .MuiBadge-badge': {
+    right: -3,
+    top: 13,
+    border: `2px solid ${(theme.vars ?? theme).palette.background.paper}`,
+    padding: '0 4px',
+  },
+}));
+
+
+function Navbar(props) {
+  const [click,setclick]=useState(0)
   const [Toggle,settoggle]=useState('');
+
+const buttonisclick=()=>{
+  setclick(click+1);
+}
+
+
 const handletoggle= ()=>{
 if(Toggle==="Dark"){
   settoggle("light");
@@ -60,11 +81,19 @@ else{
 <div></div>
 
 <div>
-  <input className="border-1 h-10 hover:border-slate-300 rounded-md border-white" type="search" placeholder="Search anything here"/><SearchIcon className="border-none rounded-md w-10 h-10  text-white bg-blue-400 hover:text-black"></SearchIcon>
+  <input className="border-1 h-10 hover:border-slate-300 rounded-md border-white cursor-pointer" type="search" placeholder="Search anything here"/><SearchIcon className=" cursor-pointer border-none rounded-md w-10 h-10  text-white bg-blue-400 hover:text-black"></SearchIcon>
 </div>
 
-<button className="text-xl border-0 border-white/50 p-2" onClick={handletoggle}>{Toggle==="Dark" ? <FaMoon />:<CiLight />}</button>
+<button className="text-xl border-0 border-white/50 p-2 cursor-pointer" onClick={handletoggle}>{Toggle==="Dark" ? <FaMoon />:<CiLight />}</button>
+
+<div>    <IconButton aria-label="cart">
+      <StyledBadge badgeContent={click} color="secondary">
+        <ShoppingCartIcon />
+      </StyledBadge>
+    </IconButton></div>
     
+    <button className="cursor-pointer" onClick={buttonisclick}>click this button</button>
+
     </div>
   );
 }

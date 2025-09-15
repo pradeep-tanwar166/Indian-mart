@@ -2,6 +2,7 @@ import React from 'react'
 import Pages from '../Components/Pages'
 import Banner from '../Components/Banner'
 import Cards from '../Components/Cards'
+import Pages2 from '../Components/Pages2'
 
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
        ))}
       </div>
       
+      <Pages2></Pages2>
     </div>
   )
 }

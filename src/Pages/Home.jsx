@@ -3,10 +3,11 @@ import Pages from '../Components/Pages'
 import Banner from '../Components/Banner'
 import Cards from '../Components/Cards'
 import Pages2 from '../Components/Pages2'
+import Pages3 from '../Components/Pages3'
 
 
 function Home() {
-  let arr=['Dress 1','Dress 2','Dress 3','Dress 4']
+  let arr=['Dress 1','Dress 2','Dress 3','Dress 4','Dress 5','Dress 6','Dress 7','Dress 8']
   return (
     <div>
      
@@ -21,6 +22,7 @@ function Home() {
       </div>
       
       <Pages2></Pages2>
+      <Pages3></Pages3>
     </div>
   )
 }

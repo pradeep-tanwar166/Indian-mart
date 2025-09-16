@@ -5,7 +5,7 @@ function Cards(props) {
     <div>
      
       <div className="">
-        <div className="h-96 w-72 border-1 border-slate-400 m-2 object-cover overflow-hidden rounded-md">
+        <div className="h-96 w-72 border-none m-2 object-cover bg-white overflow-hidden rounded-md">
           <img
             className="h-80"
             src="https://rukminim2.flixcart.com/image/420/420/xif0q/t-shirt/a/4/5/3xl-auskk01571-ausk-original-imahemfcvwzuhebe.jpeg?q=60"

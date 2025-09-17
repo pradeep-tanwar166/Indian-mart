@@ -4,6 +4,7 @@ import Banner from '../Components/Banner'
 import Cards from '../Components/Cards'
 import Pages2 from '../Components/Pages2'
 import Pages3 from '../Components/Pages3'
+import Pages4 from '../Components/Pages4'
 
 
 function Home() {
@@ -17,12 +18,13 @@ function Home() {
        {
         
        arr.map((ele,index)=>(
-<Cards key={index} title={ele}>{ele}</Cards>
+<Cards key={index} title={ele} image={ele}>{ele}</Cards>
        ))}
       </div>
       
       <Pages2></Pages2>
       <Pages3></Pages3>
+      <Pages4></Pages4>
     </div>
   )
 }

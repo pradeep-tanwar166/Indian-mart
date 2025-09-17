@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Footer() {
   return (
-    <div className='bg-gray-900 text-white p-5 m-3 grid grid-cols-3'>
+    <div className='min-h-72 bg-gray-900 text-white p-5 m-3 grid grid-cols-3'>
      <div className='px-5'>
         <div className='hover:underline cursor-pointer'>Home</div>
         <div className='hover:underline cursor-pointer'>About</div>

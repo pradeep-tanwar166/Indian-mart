@@ -5,7 +5,7 @@ import Cards from '../Components/Cards'
 import Pages2 from '../Components/Pages2'
 import Pages3 from '../Components/Pages3'
 import Pages4 from '../Components/Pages4'
-
+import Footer from '../Components/Footer'
 
 function Home() {
   let arr=['Dress 1','Dress 2','Dress 3','Dress 4','Dress 5','Dress 6','Dress 7','Dress 8']
@@ -25,6 +25,7 @@ function Home() {
       <Pages2></Pages2>
       <Pages3></Pages3>
       <Pages4></Pages4>
+      <Footer></Footer>
     </div>
   )
 }

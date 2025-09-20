@@ -47,6 +47,8 @@ else{
 }
   return (
     <div className="justify-around flex border-none h-20 items-center bg-white">
+   <div><img className="h-20 object-fill outline-none cursor-pointer" src="\logo\Logo.png" alt="" /></div>
+
       <Link
         to="/"
         className="hover:scale-110  p-1 rounded-md border-1 border-slate-300 hover:bg-slate-200 transition duration-300 ease-in-out hover:-translate-y-1"
@@ -66,19 +68,18 @@ else{
         Contact Us
       </Link>
       
-
+<Link>
  <div className="hover:scale-110 transition duration-300 ease-in-out hover:-translate-y-1  p-1">
     <Dropdown >
-      <MenuButton><FaRegUser />Login</MenuButton>
+      <MenuButton to='/Login'><FaRegUser />Login</MenuButton>
       <Menu>
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My account</MenuItem>
-        <MenuItem>Logout</MenuItem>
+        <MenuItem component={Link} to="/Profile">Profile</MenuItem>
+        <MenuItem component={Link} to="/Myaccount">My account</MenuItem>
+        <MenuItem component={Link} to="/Logout">Logout</MenuItem>
       </Menu>
     </Dropdown>
  </div>
-
-<div></div>
+</Link>
 
 <div>
   <input className="border-1 h-10 hover:border-slate-300 rounded-md border-white cursor-pointer" type="search" placeholder="Search anything here"/><SearchIcon className=" cursor-pointer border-none rounded-md w-10 h-10  text-white bg-blue-400 hover:text-black"></SearchIcon>

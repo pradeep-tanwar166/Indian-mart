@@ -21,7 +21,7 @@ function Footer() {
         <div>
             Mail us on 
             : pradeeptanwar166@gmail.com
-           <div> ********39</div>
+           <div>Fineworks Techs.</div>
         </div>
      </div>
 

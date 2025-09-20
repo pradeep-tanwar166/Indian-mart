@@ -47,7 +47,7 @@ else{
 }
   return (
     <div className="justify-around flex border-none h-20 items-center bg-white">
-   <div><img className="h-20 object-fill outline-none cursor-pointer" src="\logo\Logo.png" alt="" /></div>
+   <div><img className="h-20 object-fill outline-none cursor-pointer" src="\logo\logo.png" alt="" /></div>
 
       <Link
         to="/"

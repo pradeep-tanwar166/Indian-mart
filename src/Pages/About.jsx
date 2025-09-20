@@ -1,12 +1,12 @@
 import React from 'react'
-import About_page from '../Components/About_page'
+import AboutSection from '../Components/AboutSection'
 import Footer from '../Components/Footer'
 
 
 function About() {
   return (
     <div>
-      <About_page></About_page>
+      <AboutSection></AboutSection>
       <Footer></Footer>
     </div>
   )

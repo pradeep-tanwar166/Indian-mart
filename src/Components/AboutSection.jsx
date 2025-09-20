@@ -1,6 +1,6 @@
 import React from 'react'
 import EastIcon from '@mui/icons-material/East';
-function About_page() {
+function AboutSection() {
   return (
 <div className="bg-gray-50 min-h-screen flex flex-col items-center py-12 px-6 mt-2">
       {/* Heading */}
@@ -60,4 +60,4 @@ function About_page() {
   )
 }
 
-export default About_page
+export default AboutSection

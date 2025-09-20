@@ -4,16 +4,15 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className='min-h-72 bg-gray-900 text-white p-5 m-3 grid grid-cols-3'>
-     <div className='px-5'>
-        <div className='hover:underline cursor-pointer'>Home</div>
-        <div className='hover:underline cursor-pointer'>About</div>
-        <div className='hover:underline cursor-pointer'>contact us</div>
-        <div className='hover:underline cursor-pointer'>Help</div>
-        <div className='hover:underline cursor-pointer'>Carrers</div>
+     <div className='px-5 flex flex-col'>
+      <Link className='cursor-pointer hover:underline' to="/" >Home</Link>
+      <Link className='cursor-pointer hover:underline' to="/about" >About</Link>
+      <Link className='cursor-pointer hover:underline ' to="/contact">Contact us</Link>
      </div>
 
 

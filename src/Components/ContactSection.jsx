@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact_page= () => {
+const ContactSection= () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center py-12 px-6 mt-2">
       {/* Heading */}
@@ -77,4 +77,4 @@ const Contact_page= () => {
   );
 };
 
-export default Contact_page;
+export default ContactSection;

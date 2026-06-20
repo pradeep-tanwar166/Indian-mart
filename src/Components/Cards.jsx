@@ -8,7 +8,7 @@ function Cards(props) {
         <div className="h-96 w-72 border-none m-2 object-cover bg-white overflow-hidden rounded-md">
           <img
             className="h-80"
-            src="https://rukminim2.flixcart.com/image/420/420/xif0q/t-shirt/a/4/5/3xl-auskk01571-ausk-original-imahemfcvwzuhebe.jpeg?q=60"
+            src={props.img}
             alt=""
           />
         <div className="flex justify-center items-center "> {props.title}</div>

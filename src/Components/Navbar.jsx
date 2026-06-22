@@ -48,7 +48,7 @@ else{
   return (
     <div className="justify-around flex border-none h-20 items-center bg-white">
       <a href="\">
-   <div><img className="h-20 object-fill outline-none cursor-pointer" src="public\logo\logo.png" alt="file:///c%3A/Users/prade/OneDrive/Desktop/coding/my-project/Indian-mart/public/logo/logo2.png" /></div></a>
+   <div><img className="h-20 object-fill outline-none cursor-pointer" src="public\logo\logo.png" alt="" /></div></a>
 
       <Link
         to="/"
